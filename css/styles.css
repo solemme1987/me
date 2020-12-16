@@ -1,295 +1,336 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container header {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px 100px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url('../img/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.container header::before {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0.9;
-    background-color: #111517;
-}
-
-header .logo {
-    position: absolute;
-    top: 0;
-    margin-top: 25px;
-    max-width: 180px;
-    max-height: 80px;
-    z-index: 10000;
-}
-
-header .menu-buttom {
-    position: absolute;
-    color: white;
-    font-size: 2em;
-    top: 0;
-    right: 0;
-    margin: 40px 100px;
-    z-index: 10000;
-}
-
-header .menu-buttom:hover {
-    color: #6A42D2
-}
-
-
-/*----------------------------------------
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                .container header {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100vh;
+                    padding: 20px 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-image: url('../img/background.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                
+                .container header::before {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    opacity: 0.9;
+                    background-color: #111517;
+                }
+                
+                header .logo {
+                    position: absolute;
+                    top: 0;
+                    margin-top: 25px;
+                    max-width: 180px;
+                    max-height: 80px;
+                    z-index: 10000;
+                }
+                
+                header .menu-buttom {
+                    position: absolute;
+                    color: white;
+                    font-size: 2em;
+                    top: 0;
+                    right: 0;
+                    margin: 40px 100px;
+                    z-index: 10000;
+                }
+                
+                header .menu-buttom:hover {
+                    color: #6A42D2
+                }
+                /*----------------------------------------
         ESTILOS DEL MENU DESPLIGABLE
  -----------------------------------------*/
-
-.menu {
-    display: none;
-}
-
-
-/* Cuando presionamos el boton de menu
+                
+                .menu {
+                    display: none;
+                }
+                /* Cuando presionamos el boton de menu
  me agrega una clase .active a la lista desplegable
  y me le aplica a esa clase estos efectos*/
-
-.menu.active {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #111517;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 9000;
-}
-
-.menu:hover {
-    color: #6A42D2;
-}
-
-.menu-list {
-    font-size: 2em;
-}
-
-.menu-list li {
-    list-style: none;
-    padding: 20px;
-}
-
-.menu-list a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: 'anton', sans-serif;
-}
-
-.menu-list a:hover {
-    background: white;
-    color: #6A42D2
-}
-
-
-/*----------------------------------------
+                
+                .menu.active {
+                    display: flex;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: #111517;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 9000;
+                }
+                
+                .menu:hover {
+                    color: #6A42D2;
+                }
+                
+                .menu-list {
+                    font-size: 2em;
+                }
+                
+                .menu-list li {
+                    list-style: none;
+                    padding: 20px;
+                }
+                
+                .menu-list a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 20px;
+                    font-family: 'anton', sans-serif;
+                }
+                
+                .menu-list a:hover {
+                    background: white;
+                    color: #6A42D2
+                }
+                /*----------------------------------------
     FIN DE ESTILOS DEL MENU DESPLEGABLE
  -----------------------------------------*/
-
-
-/*----------------------------------------
+                /*----------------------------------------
   ESTILOS DE REDES SOCIALES EN EL MENÚ
  -----------------------------------------*/
-
-.social-icon {
-    color: white;
-    font-size: 1.5em;
-    padding: 10px;
-}
-
-
-/*----------------------------------------
+                
+                .social-icon {
+                    color: white;
+                    font-size: 1.5em;
+                    padding: 10px;
+                }
+                /*----------------------------------------
   ESTILOS AL TITULO DEL ANUCNIO
  -----------------------------------------*/
-
-.anuncio {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    padding-left: 130px;
-    padding-top: 130px;
-    ;
-}
-
-.anuncio .titulo {
-    position: relative;
-    font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 3.5em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    max-width: 400px;
-    margin-right: 20px;
-    line-height: 75px;
-}
-
-.anuncio .skills-icon {
-    margin-top: 10px;
-    font-size: 2.5em;
-    color: white;
-}
-
-
-/* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
-
-.anuncio .skills-icon::after {
-    content: "";
-    position: absolute;
-    background: #6A42D2;
-    width: 60px;
-    height: 7px;
-    left: 130px;
-    margin-top: 80px;
-}
-
-
-/*----------------------------------------
+                
+                .anuncio {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    padding-left: 130px;
+                    padding-top: 130px;
+                    ;
+                }
+                
+                .anuncio .titulo {
+                    position: relative;
+                    font-family: 'Anton', sans-serif;
+                    color: white;
+                    font-size: 3.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    max-width: 400px;
+                    margin-right: 20px;
+                    line-height: 75px;
+                }
+                
+                .anuncio .skills-icon {
+                    margin-top: 10px;
+                    font-size: 2.5em;
+                    color: white;
+                }
+                /* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
+                
+                .anuncio .skills-icon::after {
+                    content: "";
+                    position: absolute;
+                    background: #6A42D2;
+                    width: 60px;
+                    height: 7px;
+                    left: 130px;
+                    margin-top: 80px;
+                }
+                /*----------------------------------------
   FIN DE LOS ESTILOS AL TITULO DEL ANUCNIO
  -----------------------------------------*/
-
-
-/*----------------------------------------
+                /*----------------------------------------
    ESTILOS POSTER
  -----------------------------------------*/
-
-.poster {
-    display: flex;
-    justify-content: space-between;
-}
-
-.anuncio-parrafo {
-    position: relative;
-}
-
-.anuncio-parrafo p {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    max-width: 40%;
-    margin-top: 70px;
-}
-
-.anuncio-parrafo .anuncio-parrafo-button {
-    margin-top: 20px;
-    width: 250px;
-    padding: 22px;
-    color: white;
-    background: #6A42D2;
-    font-weight: 500;
-    font-size: 1em;
-    border-radius: 4px;
-    border-color: transparent;
-    font-family: 'Roboto', sans-serif;
-}
-
-.poster .perfil .perfil-container {
-    position: relative;
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 100%;
-    margin-top: 20px;
-    ;
-}
-
-.poster .perfil .perfil-container .img-perfil {
-    width: 200px;
-    height: 200px;
-}
-
-
-/*----------------------------------------
+                
+                .poster {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .anuncio-parrafo {
+                    position: relative;
+                }
+                
+                .anuncio-parrafo p {
+                    font-family: 'Roboto', sans-serif;
+                    color: white;
+                    max-width: 40%;
+                    margin-top: 35px;
+                }
+                
+                .anuncio-parrafo .anuncio-parrafo-button {
+                    margin-top: 20px;
+                    width: 250px;
+                    padding: 22px;
+                    color: white;
+                    background: #6A42D2;
+                    font-weight: 500;
+                    font-size: 1em;
+                    border-radius: 4px;
+                    border-color: transparent;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                .poster .perfil-container {
+                    position: relative;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: 20%;
+                    margin-top: 20px;
+                    ;
+                }
+                
+                .poster .perfil-container .img-perfil {
+                    width: 200px;
+                    height: 200px;
+                }
+                /*----------------------------------------
   FIN DE LOS ESTILOS POSTER
  -----------------------------------------*/
-
-
-/*----------------------------------------
+                /*----------------------------------------
   HEADER DEL FOOTER
  -----------------------------------------*/
-
-.anuncio .header-footer {
-    position: relative;
-    padding-top: 10px;
-    padding-right: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.header-footer .header-footer-text {
-    font-size: 0.8em;
-    font-weight: bolder;
-    width: 250px;
-    color: white;
-    text-transform: uppercase;
-}
-
-.anuncio .header-footer .header-foter-brands {
-    justify-content: space-between;
-}
-
-.anuncio .header-footer .header-foter-brands img {
-    padding-left: 80px;
-}
-
-.anuncio .header-footer .header-foter-brands img:nth-child(1) {
-    height: 20px;
-}
-
-.anuncio .header-footer .header-foter-brands img:nth-child(2) {
-    height: 40px;
-}
-
-.anuncio .header-footer .header-foter-brands img:nth-child(3) {
-    height: 30px;
-}
-
-.chat {
-    position: fixed;
-    right: 0;
-    border-radius: 55%;
-    margin-right: 40px;
-}
-
-.chat i {
-    color: white;
-    font-size: 2.5rem;
-    background-color: #6A42D2;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-/*----------------------------------------
+                
+                .anuncio .header-footer {
+                    position: relative;
+                    padding-right: 180px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+                
+                .header-footer .header-footer-text {
+                    font-size: 0.8em;
+                    font-weight: bolder;
+                    width: 250px;
+                    color: white;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+                
+                .anuncio .header-footer .header-foter-brands {
+                    justify-content: space-between;
+                }
+                
+                .anuncio .header-footer .header-foter-brands img {
+                    padding-left: 80px;
+                }
+                
+                .anuncio .header-footer .header-foter-brands img:nth-child(1) {
+                    height: 20px;
+                }
+                
+                .anuncio .header-footer .header-foter-brands img:nth-child(2) {
+                    height: 40px;
+                }
+                
+                .anuncio .header-footer .header-foter-brands img:nth-child(3) {
+                    height: 30px;
+                }
+                
+                .chat {
+                    position: fixed;
+                    right: 0;
+                    border-radius: 55%;
+                    margin-right: 40px;
+                }
+                
+                .chat i {
+                    color: white;
+                    font-size: 2.5rem;
+                    background-color: #6A42D2;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+                /*----------------------------------------
   FIN HEADER DEL FOOTER
  -----------------------------------------*/
-
-@media(max-width:992px) {}
+                /*----------------------------------------
+      MEDIA QUERIES
+ -----------------------------------------*/
+                
+                @media(max-width:1249px) {
+                    .anuncio .header-footer .header-foter-brands {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 100px;
+                        align-items: center;
+                    }
+                    .anuncio .header-footer .header-foter-brands img {
+                        padding-left: 0px;
+                    }
+                    .anuncio .header-footer .header-foter-brands img:nth-child(1) {
+                        height: 40px;
+                    }
+                    .anuncio .header-footer .header-foter-brands img:nth-child(2) {
+                        height: 60px;
+                    }
+                    .anuncio .header-footer .header-foter-brands img:nth-child(3) {
+                        height: 50px;
+                    }
+                    .header-footer .header-footer-text {
+                        display: none;
+                    }
+                    .chat {
+                        margin-top: 100px;
+                    }
+                }
+                /*----------------------------------------
+      MEDIA QUERIES  992 
+ -----------------------------------------*/
+                
+                @media(max-width:992px) {
+                    .anuncio-parrafo p {
+                        max-width: 50%;
+                        margin-top: -30px;
+                    }
+                    .anuncio-parrafo .anuncio-parrafo-button {
+                        margin-top: 30px;
+                    }
+                    .poster .perfil .perfil-container {
+                        right: 70%;
+                        margin-top: 80px;
+                    }
+                }
+                /*----------------------------------------
+      MEDIA QUERIES  900
+ -----------------------------------------*/
+                
+                @media(max-width:900px) {
+                    .anuncio .titulo {
+                        text-align: left;
+                        font-size: 3em;
+                    }
+                    .anuncio-parrafo p {
+                        max-width: 60%;
+                        margin-top: -30px;
+                        font-size: 1.3rem;
+                    }
+                }
+                /*----------------------------------------
+      MEDIA QUERIES  861
+ -----------------------------------------*/
