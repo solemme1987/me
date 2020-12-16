@@ -16,7 +16,6 @@
     background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: 1px solid #f6f5f5; */
 }
 
 .container header::before {
@@ -47,26 +46,40 @@ header .menu-buttom {
     z-index: 10000;
 }
 
+header .menu-buttom:hover {
+    color: #6A42D2
+}
+
 
 /*----------------------------------------
-        ESTILOS DE LA LISTA DEL MENU 
+        ESTILOS DEL MENU DESPLIGABLE
  -----------------------------------------*/
 
 .menu {
+    display: none;
+}
+
+
+/* Cuando presionamos el boton de menu
+ me agrega una clase .active a la lista desplegable
+ y me le aplica a esa clase estos efectos*/
+
+.menu.active {
+    display: flex;
     position: absolute;
     left: 0;
     top: 0;
     background: #111517;
     width: 100%;
     height: 100%;
-    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 9000;
 }
 
-.menu.active {
-    display: flex;
+.menu:hover {
+    color: #6A42D2;
 }
 
 .menu-list {
@@ -93,13 +106,96 @@ header .menu-buttom {
 
 
 /*----------------------------------------
-  ESTILOS DE REDES SOCIALES EN EL MENÚ
+    FIN DE ESTILOS DEL MENU DESPLEGABLE
  -----------------------------------------*/
 
-.menu .menu-list .social {}
+
+/*----------------------------------------
+  ESTILOS DE REDES SOCIALES EN EL MENÚ
+ -----------------------------------------*/
 
 .social-icon {
     color: white;
     font-size: 1.5em;
     padding: 10px;
 }
+
+
+/*----------------------------------------
+  ESTILOS AL TITULO DEL ANUCNIO
+ -----------------------------------------*/
+
+.anuncio {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding-left: 130px;
+    padding-top: 130px;
+    ;
+}
+
+.anuncio .titulo {
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: 400px;
+    margin-right: 20px;
+    line-height: 75px;
+}
+
+.anuncio .skills-icon {
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.anuncio .skills-icon::after {
+    content: "";
+    position: absolute;
+    background: #6A42D2;
+    width: 60px;
+    height: 10px;
+    left: 130px;
+    margin-top: 80px;
+}
+
+
+/*----------------------------------------
+  FIN DE LOS ESTILOS AL TITULO DEL ANUCNIO
+ -----------------------------------------*/
+
+
+/*----------------------------------------
+   ESTILOS POSTER
+ -----------------------------------------*/
+
+.poster {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster .perfil .perfil-container {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 100%;
+}
+
+.poster .perfil .perfil-container .img-perfil {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*----------------------------------------
+  FIN ESTILOS POSTER
+ -----------------------------------------*/
+
+@media(max-width:992px) {}
