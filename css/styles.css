@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container header {
@@ -9,10 +10,10 @@
     width: 100%;
     min-height: 100vh;
     padding: 20px 100px;
-    /* padding-bottom: -100px; */
+    padding-bottom: 60px;
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +31,9 @@
 }
 
 header .logo {
-    position: relative;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
     max-width: 180px;
     max-height: 80px;
     z-index: 10000;
@@ -84,7 +87,6 @@ header .menu-buttom:hover {
 
 .menu-list {
     font-size: 2em;
-    font-family: 'Anton', sans-serif;
 }
 
 .menu-list li {
@@ -96,7 +98,7 @@ header .menu-buttom:hover {
     text-decoration: none;
     color: white;
     padding: 20px;
-    ;
+    font-family: 'anton', sans-serif;
 }
 
 .menu-list a:hover {
@@ -152,12 +154,15 @@ header .menu-buttom:hover {
     color: white;
 }
 
+
+/* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
+
 .anuncio .skills-icon::after {
     content: "";
     position: absolute;
     background: #6A42D2;
     width: 60px;
-    height: 10px;
+    height: 7px;
     left: 130px;
     margin-top: 80px;
 }
@@ -177,6 +182,30 @@ header .menu-buttom:hover {
     justify-content: space-between;
 }
 
+.anuncio-parrafo {
+    position: relative;
+}
+
+.anuncio-parrafo p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    max-width: 40%;
+    margin-top: 70px;
+}
+
+.anuncio-parrafo .anuncio-parrafo-button {
+    margin-top: 20px;
+    width: 250px;
+    padding: 22px;
+    color: white;
+    background: #6A42D2;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 4px;
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
 .poster .perfil .perfil-container {
     position: relative;
     border: 2px solid white;
@@ -186,6 +215,8 @@ header .menu-buttom:hover {
     justify-content: center;
     align-items: center;
     right: 100%;
+    margin-top: 20px;
+    ;
 }
 
 .poster .perfil .perfil-container .img-perfil {
@@ -195,7 +226,70 @@ header .menu-buttom:hover {
 
 
 /*----------------------------------------
-  FIN ESTILOS POSTER
+  FIN DE LOS ESTILOS POSTER
+ -----------------------------------------*/
+
+
+/*----------------------------------------
+  HEADER DEL FOOTER
+ -----------------------------------------*/
+
+.anuncio .header-footer {
+    position: relative;
+    padding-top: 10px;
+    padding-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-footer .header-footer-text {
+    font-size: 0.8em;
+    font-weight: bolder;
+    width: 250px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.anuncio .header-footer .header-foter-brands {
+    justify-content: space-between;
+}
+
+.anuncio .header-footer .header-foter-brands img {
+    padding-left: 80px;
+}
+
+.anuncio .header-footer .header-foter-brands img:nth-child(1) {
+    height: 20px;
+}
+
+.anuncio .header-footer .header-foter-brands img:nth-child(2) {
+    height: 40px;
+}
+
+.anuncio .header-footer .header-foter-brands img:nth-child(3) {
+    height: 30px;
+}
+
+.chat {
+    position: fixed;
+    right: 0;
+    border-radius: 55%;
+    margin-right: 40px;
+}
+
+.chat i {
+    color: white;
+    font-size: 2.5rem;
+    background-color: #6A42D2;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+/*----------------------------------------
+  FIN HEADER DEL FOOTER
  -----------------------------------------*/
 
 @media(max-width:992px) {}
