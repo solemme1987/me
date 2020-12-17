@@ -89,7 +89,7 @@ section.aboutme {
 @media(max-width:768px) {
     section.aboutme {
         flex-direction: column-reverse;
-        padding: 10px 50px;
+        padding: 10px 20px;
     }
     .aboutme .aboutme_description {
         width: 100%;
@@ -97,14 +97,28 @@ section.aboutme {
     .aboutme .aboutme_img {
         width: 100%;
         margin-bottom: 20px;
+        border-radius: 0px;
     }
     .aboutme .aboutme_img img {
         display: block;
+        border-radius: 0px;
     }
     .aboutme .aboutme_description .aboutme_text {
         max-width: 100%;
     }
     .aboutme .aboutme_description .aboutme_subtitle {
         font-size: 1.6rem;
+    }
+}
+
+@media(max-width:526px) {
+    .aboutme .aboutme_description .aboutme_title {
+        font-size: 1.3rem;
+    }
+    .aboutme .aboutme_description .aboutme_subtitle {
+        font-size: 1.2rem;
+    }
+    .aboutme_btn {
+        width: 100%;
     }
 }
