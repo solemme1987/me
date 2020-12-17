@@ -536,6 +536,15 @@
                     .poster .perfil-container {
                         top: -20px;
                     }
+                    .poster .perfil-container .img-perfil {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .anuncio-parrafo .anuncio-parrafo-button {
+                        width: 250px;
+                        padding: 10px;
+                        font-size: 0.8em;
+                    }
                 }
                 
                 @media (max-width:530px) {
