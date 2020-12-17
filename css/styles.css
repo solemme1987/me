@@ -466,7 +466,7 @@ header .menu-buttom:hover {
     /* barra morada */
     .anuncio::after {
         left: 42%;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .anuncio-parrafo {
         flex-direction: column;
@@ -491,7 +491,7 @@ header .menu-buttom:hover {
     }
     .anuncio-parrafo .anuncio-parrafo-button {
         width: 250px;
-        padding: 10px;
+        padding: 20px;
         font-size: 0.8em;
     }
 }
@@ -520,10 +520,24 @@ header .menu-buttom:hover {
         max-width: 80%;
         left: 10%;
         align-self: center;
-        font-size: 1em;
-        margin-top: 18px;
+        font-size: 1.1em;
+        margin-top: 30px;
+    }
+    header .header-footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .header-footer .header-footer-brands {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid white;
+        padding: 10px;
+    }
+    .header-footer .header-footer-brands img {
+        padding-left: 40px;
     }
     header .header-footer img {
-        display: none;
+        padding: 0;
     }
 }
