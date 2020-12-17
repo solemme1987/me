@@ -574,7 +574,7 @@
                         font-size: 1em;
                         margin-top: 18px;
                     }
-                    header .header-footer {
-                        padding: 5px 180px 5px 75px;
+                    header .header-footer img {
+                        display: none;
                     }
                 }
