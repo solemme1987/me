@@ -9,10 +9,6 @@
                     position: relative;
                     width: 100%;
                     min-height: 100vh;
-                    padding: 20px 100px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
                     background-image: url('../img/background.png');
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -29,23 +25,27 @@
                     background-color: #111517;
                 }
                 
-                header .logo {
-                    position: absolute;
+                header nav {
+                    position: relative;
+                    padding: 20px 100px 0 100px;
                     top: 0;
-                    margin-top: 25px;
-                    max-width: 180px;
-                    max-height: 80px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     z-index: 10000;
+                    margin-bottom: 40px;
                 }
                 
-                header .menu-buttom {
-                    position: absolute;
+                header nav .logo {
+                    max-width: 180px;
+                    max-height: 80px;
+                }
+                
+                header nav .menu-buttom {
                     color: white;
                     font-size: 2em;
                     top: 0;
-                    right: 0;
-                    margin: 40px 100px;
-                    z-index: 10000;
                 }
                 
                 header .menu-buttom:hover {
@@ -100,12 +100,6 @@
                     background: white;
                     color: #6A42D2
                 }
-                /*----------------------------------------
-    FIN DE ESTILOS DEL MENU DESPLEGABLE
- -----------------------------------------*/
-                /*----------------------------------------
-  ESTILOS DE REDES SOCIALES EN EL MENÚ
- -----------------------------------------*/
                 
                 .social-icon {
                     color: white;
@@ -113,19 +107,24 @@
                     padding: 10px;
                 }
                 /*----------------------------------------
+    FIN DE ESTILOS DEL MENU DESPLEGABLE
+ -----------------------------------------*/
+                /*----------------------------------------
   ESTILOS AL TITULO DEL ANUCNIO
  -----------------------------------------*/
                 
                 .anuncio {
                     width: 100%;
-                    position: absolute;
+                    position: relative;
                     left: 0;
-                    padding-left: 130px;
-                    padding-top: 130px;
-                    ;
                 }
                 
-                .anuncio .titulo {
+                .anuncio .poster {
+                    align-items: center;
+                    padding: 0 250px 0 150px;
+                }
+                
+                .anuncio .poster .poster-container h2 {
                     position: relative;
                     font-family: 'Anton', sans-serif;
                     color: white;
@@ -133,25 +132,24 @@
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     max-width: 400px;
-                    margin-right: 20px;
                     line-height: 75px;
                 }
                 
-                .anuncio .skills-icon {
+                .anuncio .poster .poster-container .skills-icon {
                     margin-top: 10px;
-                    font-size: 2.5em;
+                    font-size: 2.3em;
                     color: white;
                 }
                 /* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
                 
-                .anuncio .skills-icon::after {
+                .anuncio::after {
                     content: "";
                     position: absolute;
                     background: #6A42D2;
                     width: 60px;
                     height: 7px;
-                    left: 130px;
-                    margin-top: 80px;
+                    left: 150px;
+                    margin-top: 20px;
                 }
                 /*----------------------------------------
   FIN DE LOS ESTILOS AL TITULO DEL ANUCNIO
@@ -167,13 +165,16 @@
                 
                 .anuncio-parrafo {
                     position: relative;
+                    justify-content: start;
+                    padding: 0 250px 0 150px;
                 }
                 
                 .anuncio-parrafo p {
                     font-family: 'Roboto', sans-serif;
                     color: white;
-                    max-width: 40%;
-                    margin-top: 35px;
+                    max-width: 45%;
+                    font-size: 1.3;
+                    margin-top: 50px;
                 }
                 
                 .anuncio-parrafo .anuncio-parrafo-button {
@@ -197,9 +198,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    right: 20%;
-                    margin-top: 20px;
-                    ;
                 }
                 
                 .poster .perfil-container .img-perfil {
@@ -213,13 +211,14 @@
   HEADER DEL FOOTER
  -----------------------------------------*/
                 
-                .anuncio .header-footer {
-                    position: relative;
-                    padding-right: 180px;
+                .header-footer {
+                    position: absolute;
+                    padding: 0 250px 0 150px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 100%;
+                    bottom: 0;
                 }
                 
                 .header-footer .header-footer-text {
@@ -231,31 +230,37 @@
                     margin-top: 10px;
                 }
                 
-                .anuncio .header-footer .header-foter-brands {
-                    justify-content: space-between;
+                .header-footer .header-footer-brands {
+                    width: 70%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
                 }
                 
-                .anuncio .header-footer .header-foter-brands img {
+                .header-footer .header-footer-brands img {
                     padding-left: 80px;
                 }
                 
-                .anuncio .header-footer .header-foter-brands img:nth-child(1) {
+                .header-footer .header-footer-brands img:nth-child(1) {
                     height: 20px;
+                    padding-left: 0;
                 }
                 
-                .anuncio .header-footer .header-foter-brands img:nth-child(2) {
+                .header-footer .header-footer-brands img:nth-child(2) {
                     height: 40px;
                 }
                 
-                .anuncio .header-footer .header-foter-brands img:nth-child(3) {
+                .header-footer .header-footer-brands img:nth-child(3) {
                     height: 30px;
                 }
                 
                 .chat {
                     position: fixed;
                     right: 0;
+                    bottom: 0;
                     border-radius: 55%;
-                    margin-right: 40px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
                 }
                 
                 .chat i {
@@ -267,70 +272,300 @@
                 }
                 /*----------------------------------------
   FIN HEADER DEL FOOTER
- -----------------------------------------*/
-                /*----------------------------------------
-      MEDIA QUERIES
- -----------------------------------------*/
+  -------------------------------------------------------*/
                 
-                @media(max-width:1249px) {
-                    .anuncio .header-footer .header-foter-brands {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        margin-top: 100px;
-                        align-items: center;
-                    }
-                    .anuncio .header-footer .header-foter-brands img {
-                        padding-left: 0px;
-                    }
-                    .anuncio .header-footer .header-foter-brands img:nth-child(1) {
-                        height: 40px;
-                    }
-                    .anuncio .header-footer .header-foter-brands img:nth-child(2) {
-                        height: 60px;
-                    }
-                    .anuncio .header-footer .header-foter-brands img:nth-child(3) {
-                        height: 50px;
+                @media (max-width:1240px) {
+                    .header-footer {
+                        padding: 5px 180px 5px 150px;
                     }
                     .header-footer .header-footer-text {
                         display: none;
                     }
-                    .chat {
-                        margin-top: 100px;
+                    .header-footer .header-footer-brands {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                }
+                
+                @media (max-width:1064px) {
+                    header nav {
+                        margin-bottom: 10px;
+                    }
+                    .anuncio .poster {
+                        margin-top: 15px;
+                    }
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 3.2em;
+                        letter-spacing: 3px;
+                        max-width: 400px;
+                        line-height: 55px;
+                    }
+                    .anuncio-parrafo p {
+                        max-width: 70%;
+                        font-size: 1.2em;
+                    }
+                    .anuncio .poster {
+                        padding: 0 150px 0 150px;
+                    }
+                    .poster .perfil-container {
+                        top: 80px;
+                    }
+                }
+                
+                @media (max-width:768px) {
+                    header nav {}
+                    /* div de la foto y el titulo */
+                    .anuncio .poster {
+                        margin-top: 40px;
+                        flex-direction: column-reverse;
+                    }
+                    /* titulo */
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 2em;
+                        letter-spacing: 3px;
+                        max-width: 600px;
+                        line-height: 55px;
+                        text-align: center;
+                    }
+                    /* stack */
+                    .anuncio .poster .poster-container .skills-icon {
+                        text-align: center;
+                        font-size: 30px;
+                        margin-top: -10px;
+                    }
+                    /* barra morada */
+                    .anuncio::after {
+                        left: 46%;
+                        margin-top: 5px;
+                    }
+                    .anuncio-parrafo {
+                        flex-direction: column;
+                        padding: 0 0px 0 0px;
+                        text-align: center;
+                    }
+                    .anuncio-parrafo p {
+                        position: relative;
+                        max-width: 35%;
+                        left: 32%;
+                        align-self: center;
+                        font-size: 1em;
+                        margin-top: 18px;
+                        /* left: auto 0;
+                            border: 1px solid white;
+                            max-width: 40%;
+                            font-size: 1.2em; */
+                    }
+                    /* foto */
+                    .poster .perfil-container {
+                        top: 0px;
+                    }
+                }
+                
+                @media (max-width:991px) {
+                    header nav {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    .anuncio .poster {
+                        margin-top: 60px;
+                    }
+                    /* titulo */
+                    .anuncio .poster .poster-container h2 {
+                        margin-top: 20px;
+                    }
+                    /* stack */
+                    .anuncio .poster .poster-container .skills-icon {
+                        margin-top: 15px;
+                    }
+                    /* barra morada */
+                    .anuncio::after {
+                        margin-top: 18px;
+                    }
+                    .anuncio-parrafo {
+                        margin-top: 40px;
                     }
                 }
                 /*----------------------------------------
-      MEDIA QUERIES  992 
- -----------------------------------------*/
+  FIN HEADER DEL FOOTER
+  -------------------------------------------------------*/
+                /*----------------------------------------
+  ANIMACIONES
+  -------------------------------------------------------*/
+                /*----------------------------------------
+  MEDIAS QUERIES
+  -------------------------------------------------------*/
                 
-                @media(max-width:992px) {
+                @media (max-width:1240px) {
+                    .header-footer {
+                        padding: 5px 180px 5px 150px;
+                    }
+                    .header-footer .header-footer-text {
+                        display: none;
+                    }
+                    .header-footer .header-footer-brands {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                }
+                
+                @media (max-width:1064px) {
+                    header nav {
+                        margin-bottom: 10px;
+                    }
+                    .anuncio .poster {
+                        margin-top: 15px;
+                    }
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 3.2em;
+                        letter-spacing: 3px;
+                        max-width: 400px;
+                        line-height: 55px;
+                    }
                     .anuncio-parrafo p {
+                        max-width: 70%;
+                        font-size: 1.2em;
+                    }
+                    .anuncio .poster {
+                        padding: 0 150px 0 150px;
+                    }
+                    .poster .perfil-container {
+                        top: 80px;
+                    }
+                }
+                
+                @media (max-width:991px) {
+                    header nav {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    .anuncio .poster {
+                        margin-top: 20px;
+                    }
+                    /* titulo */
+                    .anuncio .poster .poster-container h2 {
+                        margin-top: -10px
+                    }
+                    /* stack */
+                    .anuncio .poster .poster-container .skills-icon {
+                        margin-top: 15px;
+                    }
+                    /* barra morada */
+                    .anuncio::after {
+                        margin-top: 20px;
+                    }
+                    .anuncio-parrafo {
+                        margin-top: 20px;
+                    }
+                    .anuncio-parrafo p {
+                        position: relative;
+                        max-width: 40%;
+                        align-self: center;
+                        font-size: 1em;
+                        margin-top: 18px;
+                    }
+                    /* foto */
+                    .anuncio-parrafo p {
+                        position: relative;
+                        max-width: 70%;
+                        font-size: 1em;
+                        margin-top: 18px;
+                    }
+                    /* foto */
+                    .poster .perfil-container {
+                        top: 50px;
+                    }
+                    .poster .perfil-container .img-perfil {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                
+                @media (max-width:863px) {
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 2.5em;
+                    }
+                }
+                
+                @media (max-width:796px) {
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 2.2em;
+                    }
+                }
+                
+                @media (max-width:768px) {
+                    /* div de la foto y el titulo */
+                    .anuncio .poster {
+                        margin-top: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        flex-direction: column-reverse;
+                    }
+                    /* titulo */
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 2em;
+                        letter-spacing: 3px;
+                        max-width: 900px;
+                        line-height: 55px;
+                        text-align: center;
+                    }
+                    /* stack */
+                    .anuncio .poster .poster-container .skills-icon {
+                        text-align: center;
+                        font-size: 30px;
+                        margin-top: -10px;
+                    }
+                    /* barra morada */
+                    .anuncio::after {
+                        left: 42%;
+                        margin-top: 5px;
+                    }
+                    .anuncio-parrafo {
+                        flex-direction: column;
+                        padding: 0 0px 0 0px;
+                        text-align: center;
+                    }
+                    .anuncio-parrafo p {
+                        position: relative;
                         max-width: 50%;
-                        margin-top: -30px;
+                        left: 25%;
+                        align-self: center;
+                        font-size: 1em;
+                        margin-top: 18px;
                     }
-                    .anuncio-parrafo .anuncio-parrafo-button {
-                        margin-top: 30px;
-                    }
-                    .poster .perfil .perfil-container {
-                        right: 70%;
-                        margin-top: 80px;
+                    /* foto */
+                    .poster .perfil-container {
+                        top: -20px;
                     }
                 }
-                /*----------------------------------------
-      MEDIA QUERIES  900
- -----------------------------------------*/
                 
-                @media(max-width:900px) {
-                    .anuncio .titulo {
-                        text-align: left;
-                        font-size: 3em;
+                @media (max-width:530px) {
+                    header nav {
+                        margin-bottom: 70px;
+                    }
+                    header nav .logo {
+                        max-width: 120px;
+                        max-height: 80px;
+                    }
+                    .anuncio .poster .poster-container h2 {
+                        font-size: 25px;
+                        letter-spacing: 3px;
+                        line-height: 28px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .anuncio .poster .poster-container .skills-icon {
+                        width: 100%;
+                        font-size: 1.5rem;
                     }
                     .anuncio-parrafo p {
-                        max-width: 60%;
-                        margin-top: -30px;
-                        font-size: 1.3rem;
+                        position: relative;
+                        max-width: 80%;
+                        left: 10%;
+                        align-self: center;
+                        font-size: 1em;
+                        margin-top: 18px;
+                    }
+                    header .header-footer {
+                        padding: 5px 180px 5px 75px;
                     }
                 }
-                /*----------------------------------------
-      MEDIA QUERIES  861
- -----------------------------------------*/
