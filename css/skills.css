@@ -1,0 +1,147 @@
+section.skills {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    ;
+}
+
+section.skills::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+    background-color: #111517;
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.skills_description,
+.skills_stack {
+    padding-top: 40px;
+    z-index: 9000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills_description h2,
+.skills_stack h2 {
+    color: white;
+    font-family: 'Anton', 'sans-serif';
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 50%;
+    line-height: 52px;
+    ;
+}
+
+.skills_stack h2 {
+    margin-bottom: 75px;
+}
+
+.skills-text {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    width: 90%;
+}
+
+.skills_bar {
+    width: 100%;
+    margin-bottom: 20px;
+    ;
+}
+
+progress {
+    width: 17em;
+    padding: 0;
+}
+
+.skills_stack .skills_bar {
+    display: flex;
+}
+
+.skills_stack .skills_bar .ht,
+.db,
+.css,
+.php,
+.js,
+.angular {
+    /* border: 1px solid white; */
+    width: 50%;
+    padding-right: 10px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media(max-width:1264px) {
+    .skills_description h2 {
+        width: 100%;
+    }
+    .skills_stack h2 {
+        margin-bottom: 20px;
+    }
+    .skills_stack {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills_bar .ht {
+        width: 100%;
+    }
+    progress {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media(max-width:768px) {
+    section.skills {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .skills_description h2,
+    .skills_stack h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .skills_stack h2 {
+        margin-bottom: 10px;
+    }
+    .skills .skills_description {
+        width: 100%;
+    }
+    .skills-text {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .skills_stack {
+        width: 100%;
+        flex-direction: column;
+    }
+    .skills_bar .ht {
+        width: 100%;
+    }
+    progress {
+        width: 100%;
+        padding: 0;
+    }
+}
