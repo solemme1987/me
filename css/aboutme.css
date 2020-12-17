@@ -1,0 +1,110 @@
+/*----------------------------------------
+  ABOUT ME
+  ------------------------------------------*/
+
+section.aboutme {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme .aboutme_description {
+    width: 50%;
+}
+
+.aboutme .aboutme_description .aboutme_title {
+    text-transform: uppercase;
+    color: #8f928f;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: 'Anton', 'Sans serif';
+}
+
+.aboutme .aboutme_description .aboutme_subtitle {
+    text-transform: capitalize;
+    max-width: 80%;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.aboutme .aboutme_description .aboutme_text {
+    max-width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.aboutme .aboutme_img {
+    width: 50%;
+    background-image: url(../img/aboutme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+}
+
+.aboutme .aboutme_img img {
+    max-width: 100%;
+    border-radius: 19px;
+    display: none;
+}
+
+.aboutme_btn {
+    width: 230px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.aboutme_btn:hover {
+    background: #4b26a8;
+}
+
+
+/*------------------------------------------
+  FIN ABOUT ME
+  ------------------------------------------*/
+
+
+/*------------------------------------------
+  medias query
+  ------------------------------------------*/
+
+@media (max-width:1240px) {
+    .aboutme .aboutme_description .aboutme_subtitle {
+        text-transform: capitalize;
+        max-width: 90%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    .aboutme .aboutme_description .aboutme_text {
+        max-width: 90%;
+        margin-bottom: 0px;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+
+@media(max-width:768px) {
+    section.aboutme {
+        flex-direction: column-reverse;
+        padding: 10px 50px;
+    }
+    .aboutme .aboutme_description {
+        width: 100%;
+    }
+    .aboutme .aboutme_img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .aboutme .aboutme_img img {
+        display: block;
+    }
+    .aboutme .aboutme_description .aboutme_text {
+        max-width: 100%;
+    }
+    .aboutme .aboutme_description .aboutme_subtitle {
+        font-size: 1.6rem;
+    }
+}
