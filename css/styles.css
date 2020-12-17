@@ -1,580 +1,529 @@
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
-                .container header {
-                    position: relative;
-                    width: 100%;
-                    min-height: 100vh;
-                    background-image: url('../img/background.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                .container header::before {
-                    content: "";
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    opacity: 0.9;
-                    background-color: #111517;
-                }
-                
-                header nav {
-                    position: relative;
-                    padding: 20px 100px 0 100px;
-                    top: 0;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    z-index: 10000;
-                    margin-bottom: 40px;
-                }
-                
-                header nav .logo {
-                    max-width: 180px;
-                    max-height: 80px;
-                }
-                
-                header nav .menu-buttom {
-                    color: white;
-                    font-size: 2em;
-                    top: 0;
-                }
-                
-                header .menu-buttom:hover {
-                    color: #6A42D2
-                }
-                /*----------------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+    background-color: #111517;
+}
+
+header nav {
+    position: relative;
+    padding: 20px 100px 0 100px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    margin-bottom: 40px;
+}
+
+header nav .logo {
+    max-width: 180px;
+    max-height: 80px;
+}
+
+header nav .menu-buttom {
+    color: white;
+    font-size: 2em;
+    top: 0;
+    transition: 0.3s ease-in-out;
+}
+
+header .menu-buttom:hover {
+    color: #6A42D2
+}
+
+
+/*----------------------------------------
         ESTILOS DEL MENU DESPLIGABLE
  -----------------------------------------*/
-                
-                .menu {
-                    display: none;
-                }
-                /* Cuando presionamos el boton de menu
+
+.menu {
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+
+
+/* Cuando presionamos el boton de menu
  me agrega una clase .active a la lista desplegable
  y me le aplica a esa clase estos efectos*/
-                
-                .menu.active {
-                    display: flex;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    background: #111517;
-                    width: 100%;
-                    height: 100%;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    z-index: 9000;
-                }
-                
-                .menu:hover {
-                    color: #6A42D2;
-                }
-                
-                .menu-list {
-                    font-size: 2em;
-                }
-                
-                .menu-list li {
-                    list-style: none;
-                    padding: 20px;
-                }
-                
-                .menu-list a {
-                    text-decoration: none;
-                    color: white;
-                    padding: 20px;
-                    font-family: 'anton', sans-serif;
-                }
-                
-                .menu-list a:hover {
-                    background: white;
-                    color: #6A42D2
-                }
-                
-                .social-icon {
-                    color: white;
-                    font-size: 1.5em;
-                    padding: 10px;
-                }
-                /*----------------------------------------
+
+.menu.active {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #111517;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9000;
+}
+
+.menu-list {
+    font-size: 2em;
+    transition: 0.4s ease-in-out;
+}
+
+.menu-list li {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: 'anton', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-list a:hover {
+    background: white;
+    color: #6A42D2;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.social-icon:hover {
+    background: #6A42D2;
+    transform: translateY(-10px);
+    border-radius: 50%;
+}
+
+
+/*----------------------------------------
+
+/*----------------------------------------
     FIN DE ESTILOS DEL MENU DESPLEGABLE
  -----------------------------------------*/
-                /*----------------------------------------
+
+
+/*----------------------------------------
   ESTILOS AL TITULO DEL ANUCNIO
  -----------------------------------------*/
-                
-                .anuncio {
-                    width: 100%;
-                    position: relative;
-                    left: 0;
-                }
-                
-                .anuncio .poster {
-                    align-items: center;
-                    padding: 0 250px 0 150px;
-                }
-                
-                .anuncio .poster .poster-container h2 {
-                    position: relative;
-                    font-family: 'Anton', sans-serif;
-                    color: white;
-                    font-size: 3.5em;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                    max-width: 400px;
-                    line-height: 75px;
-                }
-                
-                .anuncio .poster .poster-container .skills-icon {
-                    margin-top: 10px;
-                    font-size: 2.3em;
-                    color: white;
-                }
-                /* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
-                
-                .anuncio::after {
-                    content: "";
-                    position: absolute;
-                    background: #6A42D2;
-                    width: 60px;
-                    height: 7px;
-                    left: 150px;
-                    margin-top: 20px;
-                }
-                /*----------------------------------------
+
+.anuncio {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.anuncio .poster {
+    align-items: center;
+    padding: 0 250px 0 150px;
+}
+
+.anuncio .poster .poster-container h2 {
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: 400px;
+    line-height: 75px;
+    animation-name: anuncio;
+    animation-duration: 0.5s;
+    transition: 0.5s ease-in-out;
+}
+
+.anuncio .poster .poster-container .skills-icon {
+    margin-top: 10px;
+    font-size: 2.3em;
+    color: white;
+    animation-name: anuncio;
+    animation-duration: 0.9s;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* LINEA MORADA DESPUES DE LOS ICONOS DEL STACK */
+
+.anuncio::after {
+    content: "";
+    position: absolute;
+    background: #6A42D2;
+    width: 60px;
+    height: 7px;
+    left: 150px;
+    margin-top: 20px;
+}
+
+
+/*----------------------------------------
   FIN DE LOS ESTILOS AL TITULO DEL ANUCNIO
  -----------------------------------------*/
-                /*----------------------------------------
+
+
+/*----------------------------------------
    ESTILOS POSTER
  -----------------------------------------*/
-                
-                .poster {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                
-                .anuncio-parrafo {
-                    position: relative;
-                    justify-content: start;
-                    padding: 0 250px 0 150px;
-                }
-                
-                .anuncio-parrafo p {
-                    font-family: 'Roboto', sans-serif;
-                    color: white;
-                    max-width: 45%;
-                    font-size: 1.3;
-                    margin-top: 50px;
-                }
-                
-                .anuncio-parrafo .anuncio-parrafo-button {
-                    margin-top: 20px;
-                    width: 250px;
-                    padding: 22px;
-                    color: white;
-                    background: #6A42D2;
-                    font-weight: 500;
-                    font-size: 1em;
-                    border-radius: 4px;
-                    border-color: transparent;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
-                .poster .perfil-container {
-                    position: relative;
-                    border: 2px solid white;
-                    border-radius: 50%;
-                    padding: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .poster .perfil-container .img-perfil {
-                    width: 200px;
-                    height: 200px;
-                }
-                /*----------------------------------------
+
+.poster {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio-parrafo {
+    position: relative;
+    justify-content: start;
+    padding: 0 250px 0 150px;
+}
+
+.anuncio-parrafo p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    max-width: 45%;
+    font-size: 1.3;
+    margin-top: 50px;
+    animation-name: anuncio;
+    animation-duration: 0.7s;
+    transition: 0.5s ease-in-out;
+}
+
+.anuncio-parrafo .anuncio-parrafo-button {
+    margin-top: 20px;
+    width: 250px;
+    padding: 22px;
+    color: white;
+    background: #6A42D2;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 4px;
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.anuncio-parrafo .anuncio-parrafo-button:hover {
+    background: #4b26a8;
+}
+
+.poster .perfil-container {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: poster;
+    animation-duration: 0.8s;
+}
+
+.poster .perfil-container .img-perfil {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*----------------------------------------
   FIN DE LOS ESTILOS POSTER
  -----------------------------------------*/
-                /*----------------------------------------
+
+
+/*----------------------------------------
   HEADER DEL FOOTER
  -----------------------------------------*/
-                
-                .header-footer {
-                    position: absolute;
-                    padding: 0 250px 0 150px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 100%;
-                    bottom: 0;
-                }
-                
-                .header-footer .header-footer-text {
-                    font-size: 0.8em;
-                    font-weight: bolder;
-                    width: 250px;
-                    color: white;
-                    text-transform: uppercase;
-                    margin-top: 10px;
-                }
-                
-                .header-footer .header-footer-brands {
-                    width: 70%;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                }
-                
-                .header-footer .header-footer-brands img {
-                    padding-left: 80px;
-                }
-                
-                .header-footer .header-footer-brands img:nth-child(1) {
-                    height: 20px;
-                    padding-left: 0;
-                }
-                
-                .header-footer .header-footer-brands img:nth-child(2) {
-                    height: 40px;
-                }
-                
-                .header-footer .header-footer-brands img:nth-child(3) {
-                    height: 30px;
-                }
-                
-                .chat {
-                    position: fixed;
-                    right: 0;
-                    bottom: 0;
-                    border-radius: 55%;
-                    margin-right: 10px;
-                    margin-bottom: 10px;
-                }
-                
-                .chat i {
-                    color: white;
-                    font-size: 2.5rem;
-                    background-color: #6A42D2;
-                    border-radius: 50%;
-                    padding: 10px;
-                }
-                /*----------------------------------------
+
+.header-footer {
+    position: absolute;
+    padding: 0 250px 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.header-footer .header-footer-text {
+    font-size: 0.8em;
+    font-weight: bolder;
+    width: 250px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.header-footer .header-footer-brands {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-footer .header-footer-brands img {
+    padding-left: 80px;
+}
+
+.header-footer .header-footer-brands img:nth-child(1) {
+    height: 20px;
+    padding-left: 0;
+}
+
+.header-footer .header-footer-brands img:nth-child(2) {
+    height: 40px;
+}
+
+.header-footer .header-footer-brands img:nth-child(3) {
+    height: 30px;
+}
+
+.chat {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 55%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.chat i {
+    color: white;
+    font-size: 2.5rem;
+    background-color: #6A42D2;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.chat i:hover {
+    background: #4b26a8;
+}
+
+
+/*----------------------------------------
   FIN HEADER DEL FOOTER
   -------------------------------------------------------*/
-                
-                @media (max-width:1240px) {
-                    .header-footer {
-                        padding: 5px 180px 5px 150px;
-                    }
-                    .header-footer .header-footer-text {
-                        display: none;
-                    }
-                    .header-footer .header-footer-brands {
-                        width: 100%;
-                        justify-content: space-between;
-                    }
-                }
-                
-                @media (max-width:1064px) {
-                    header nav {
-                        margin-bottom: 10px;
-                    }
-                    .anuncio .poster {
-                        margin-top: 15px;
-                    }
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 3.2em;
-                        letter-spacing: 3px;
-                        max-width: 400px;
-                        line-height: 55px;
-                    }
-                    .anuncio-parrafo p {
-                        max-width: 70%;
-                        font-size: 1.2em;
-                    }
-                    .anuncio .poster {
-                        padding: 0 150px 0 150px;
-                    }
-                    .poster .perfil-container {
-                        top: 80px;
-                    }
-                }
-                
-                @media (max-width:768px) {
-                    header nav {}
-                    /* div de la foto y el titulo */
-                    .anuncio .poster {
-                        margin-top: 40px;
-                        flex-direction: column-reverse;
-                    }
-                    /* titulo */
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 2em;
-                        letter-spacing: 3px;
-                        max-width: 600px;
-                        line-height: 55px;
-                        text-align: center;
-                    }
-                    /* stack */
-                    .anuncio .poster .poster-container .skills-icon {
-                        text-align: center;
-                        font-size: 30px;
-                        margin-top: -10px;
-                    }
-                    /* barra morada */
-                    .anuncio::after {
-                        left: 46%;
-                        margin-top: 5px;
-                    }
-                    .anuncio-parrafo {
-                        flex-direction: column;
-                        padding: 0 0px 0 0px;
-                        text-align: center;
-                    }
-                    .anuncio-parrafo p {
-                        position: relative;
-                        max-width: 35%;
-                        left: 32%;
-                        align-self: center;
-                        font-size: 1em;
-                        margin-top: 18px;
-                        /* left: auto 0;
-                            border: 1px solid white;
-                            max-width: 40%;
-                            font-size: 1.2em; */
-                    }
-                    /* foto */
-                    .poster .perfil-container {
-                        top: 0px;
-                    }
-                }
-                
-                @media (max-width:991px) {
-                    header nav {
-                        padding-left: 40px;
-                        padding-right: 40px;
-                    }
-                    .anuncio .poster {
-                        margin-top: 60px;
-                    }
-                    /* titulo */
-                    .anuncio .poster .poster-container h2 {
-                        margin-top: 20px;
-                    }
-                    /* stack */
-                    .anuncio .poster .poster-container .skills-icon {
-                        margin-top: 15px;
-                    }
-                    /* barra morada */
-                    .anuncio::after {
-                        margin-top: 18px;
-                    }
-                    .anuncio-parrafo {
-                        margin-top: 40px;
-                    }
-                }
-                /*----------------------------------------
-  FIN HEADER DEL FOOTER
-  -------------------------------------------------------*/
-                /*----------------------------------------
+
+
+/*----------------------------------------
   ANIMACIONES
   -------------------------------------------------------*/
-                /*----------------------------------------
+
+@keyframes poster {
+    from {
+        transform: translatey(-100%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+
+@keyframes anuncio {
+    from {
+        transform: translatex(-100%);
+    }
+    to {
+        transform: translatex(0%);
+    }
+}
+
+
+/*----------------------------------------
   MEDIAS QUERIES
   -------------------------------------------------------*/
-                
-                @media (max-width:1240px) {
-                    .header-footer {
-                        padding: 5px 180px 5px 150px;
-                    }
-                    .header-footer .header-footer-text {
-                        display: none;
-                    }
-                    .header-footer .header-footer-brands {
-                        width: 100%;
-                        justify-content: space-between;
-                    }
-                }
-                
-                @media (max-width:1064px) {
-                    header nav {
-                        margin-bottom: 10px;
-                    }
-                    .anuncio .poster {
-                        margin-top: 15px;
-                    }
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 3.2em;
-                        letter-spacing: 3px;
-                        max-width: 400px;
-                        line-height: 55px;
-                    }
-                    .anuncio-parrafo p {
-                        max-width: 70%;
-                        font-size: 1.2em;
-                    }
-                    .anuncio .poster {
-                        padding: 0 150px 0 150px;
-                    }
-                    .poster .perfil-container {
-                        top: 80px;
-                    }
-                }
-                
-                @media (max-width:991px) {
-                    header nav {
-                        padding-left: 40px;
-                        padding-right: 40px;
-                    }
-                    .anuncio .poster {
-                        margin-top: 20px;
-                    }
-                    /* titulo */
-                    .anuncio .poster .poster-container h2 {
-                        margin-top: -10px
-                    }
-                    /* stack */
-                    .anuncio .poster .poster-container .skills-icon {
-                        margin-top: 15px;
-                    }
-                    /* barra morada */
-                    .anuncio::after {
-                        margin-top: 20px;
-                    }
-                    .anuncio-parrafo {
-                        margin-top: 20px;
-                    }
-                    .anuncio-parrafo p {
-                        position: relative;
-                        max-width: 40%;
-                        align-self: center;
-                        font-size: 1em;
-                        margin-top: 18px;
-                    }
-                    /* foto */
-                    .anuncio-parrafo p {
-                        position: relative;
-                        max-width: 70%;
-                        font-size: 1em;
-                        margin-top: 18px;
-                    }
-                    /* foto */
-                    .poster .perfil-container {
-                        top: 50px;
-                    }
-                    .poster .perfil-container .img-perfil {
-                        width: 150px;
-                        height: 150px;
-                    }
-                }
-                
-                @media (max-width:863px) {
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 2.5em;
-                    }
-                }
-                
-                @media (max-width:796px) {
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 2.2em;
-                    }
-                }
-                
-                @media (max-width:768px) {
-                    /* div de la foto y el titulo */
-                    .anuncio .poster {
-                        margin-top: 20px;
-                        padding-left: 40px;
-                        padding-right: 40px;
-                        flex-direction: column-reverse;
-                    }
-                    /* titulo */
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 2em;
-                        letter-spacing: 3px;
-                        max-width: 900px;
-                        line-height: 55px;
-                        text-align: center;
-                    }
-                    /* stack */
-                    .anuncio .poster .poster-container .skills-icon {
-                        text-align: center;
-                        font-size: 30px;
-                        margin-top: -10px;
-                    }
-                    /* barra morada */
-                    .anuncio::after {
-                        left: 42%;
-                        margin-top: 5px;
-                    }
-                    .anuncio-parrafo {
-                        flex-direction: column;
-                        padding: 0 0px 0 0px;
-                        text-align: center;
-                    }
-                    .anuncio-parrafo p {
-                        position: relative;
-                        max-width: 50%;
-                        left: 25%;
-                        align-self: center;
-                        font-size: 1em;
-                        margin-top: 18px;
-                    }
-                    /* foto */
-                    .poster .perfil-container {
-                        top: -20px;
-                    }
-                    .poster .perfil-container .img-perfil {
-                        width: 100px;
-                        height: 100px;
-                    }
-                    .anuncio-parrafo .anuncio-parrafo-button {
-                        width: 250px;
-                        padding: 10px;
-                        font-size: 0.8em;
-                    }
-                }
-                
-                @media (max-width:530px) {
-                    header nav {
-                        margin-bottom: 70px;
-                    }
-                    header nav .logo {
-                        max-width: 120px;
-                        max-height: 80px;
-                    }
-                    .anuncio .poster .poster-container h2 {
-                        font-size: 25px;
-                        letter-spacing: 3px;
-                        line-height: 28px;
-                        text-align: center;
-                        margin-bottom: 20px;
-                    }
-                    .anuncio .poster .poster-container .skills-icon {
-                        width: 100%;
-                        font-size: 1.5rem;
-                    }
-                    .anuncio-parrafo p {
-                        position: relative;
-                        max-width: 80%;
-                        left: 10%;
-                        align-self: center;
-                        font-size: 1em;
-                        margin-top: 18px;
-                    }
-                    header .header-footer img {
-                        display: none;
-                    }
-                }
+
+@media (max-width:1240px) {
+    .header-footer {
+        padding: 5px 180px 5px 150px;
+    }
+    .header-footer .header-footer-text {
+        display: none;
+    }
+    .header-footer .header-footer-brands {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:1064px) {
+    header nav {
+        margin-bottom: 10px;
+    }
+    .anuncio .poster {
+        margin-top: 15px;
+    }
+    .anuncio .poster .poster-container h2 {
+        font-size: 3.2em;
+        letter-spacing: 3px;
+        max-width: 400px;
+        line-height: 55px;
+    }
+    .anuncio-parrafo p {
+        max-width: 70%;
+        font-size: 1.2em;
+    }
+    .anuncio .poster {
+        padding: 0 150px 0 150px;
+    }
+    .poster .perfil-container {
+        top: 80px;
+    }
+}
+
+@media (max-width:991px) {
+    header nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .anuncio .poster {
+        margin-top: 20px;
+    }
+    /* titulo */
+    .anuncio .poster .poster-container h2 {
+        margin-top: -10px
+    }
+    /* stack */
+    .anuncio .poster .poster-container .skills-icon {
+        margin-top: 15px;
+    }
+    /* barra morada */
+    .anuncio::after {
+        margin-top: 20px;
+    }
+    .anuncio-parrafo {
+        margin-top: 20px;
+    }
+    .anuncio-parrafo p {
+        position: relative;
+        max-width: 70%;
+        font-size: 1em;
+        margin-top: 43px;
+    }
+    /* foto */
+    .poster .perfil-container {
+        top: 50px;
+    }
+    .poster .perfil-container .img-perfil {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:863px) {
+    .anuncio .poster .poster-container h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:796px) {
+    .anuncio .poster .poster-container h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width:768px) {
+    /* div de la foto y el titulo */
+    .anuncio .poster {
+        margin-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-direction: column-reverse;
+    }
+    /* titulo */
+    .anuncio .poster .poster-container h2 {
+        font-size: 2em;
+        letter-spacing: 3px;
+        max-width: 900px;
+        line-height: 55px;
+        text-align: center;
+    }
+    /* stack */
+    .anuncio .poster .poster-container .skills-icon {
+        text-align: center;
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    /* barra morada */
+    .anuncio::after {
+        left: 42%;
+        margin-top: 5px;
+    }
+    .anuncio-parrafo {
+        flex-direction: column;
+        padding: 0 0px 0 0px;
+        text-align: center;
+    }
+    .anuncio-parrafo p {
+        position: relative;
+        max-width: 50%;
+        left: 25%;
+        align-self: center;
+        font-size: 1em;
+        margin-top: 18px;
+    }
+    /* foto */
+    .poster .perfil-container {
+        top: -20px;
+    }
+    .poster .perfil-container .img-perfil {
+        width: 100px;
+        height: 100px;
+    }
+    .anuncio-parrafo .anuncio-parrafo-button {
+        width: 250px;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:530px) {
+    header nav {
+        margin-bottom: 70px;
+    }
+    header nav .logo {
+        max-width: 120px;
+        max-height: 80px;
+    }
+    .anuncio .poster .poster-container h2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .anuncio .poster .poster-container .skills-icon {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .anuncio-parrafo p {
+        position: relative;
+        max-width: 80%;
+        left: 10%;
+        align-self: center;
+        font-size: 1em;
+        margin-top: 18px;
+    }
+    header .header-footer img {
+        display: none;
+    }
+}
