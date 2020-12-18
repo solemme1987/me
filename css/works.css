@@ -12,6 +12,16 @@ section.works .tittle-works-section {
     ;
 }
 
+section.works .tittle-works-section::after {
+    content: "";
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -16%;
+    width: 60px;
+    height: 6px;
+    background: #6A42D2;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
