@@ -310,6 +310,7 @@ header .menu-buttom:hover {
     border-radius: 55%;
     margin-right: 10px;
     margin-bottom: 10px;
+    z-index: 90000;
 }
 
 .chat i {
