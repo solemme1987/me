@@ -52,6 +52,20 @@ section.works .tittle-works-section {
     background: #008C5d;
 }
 
+.grid-item:hover img {
+    /* esta es la animacino para  la .card que  gire 360 grados
+   cuando haga hover pero cuando saque el mouse que se regrese suabesito sin brusquedad 
+*/
+    /* transform: translateY(-10px); */
+    /* transition-duration: 0.6s;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); */
+    -webkit-transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+}
+
 .grid-item .card-tittle>a {
     position: relative;
     left: -20px;
@@ -80,6 +94,7 @@ section.works .tittle-works-section {
 
 .grid-item .card-img-container img {
     width: 50%;
+    transition: transform 0.6s ease-in-out;
 }
 
 .grid-item.woobit .card-img-container img {
