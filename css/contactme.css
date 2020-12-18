@@ -5,10 +5,6 @@ section.contactme {}
     grid-template-columns: auto auto;
 }
 
-.grid-item-contact {
-    /* border: 1px solid red; */
-}
-
 section.contactme .tittle-contact-section {
     text-transform: uppercase;
     font-family: 'Anton', 'Sans serif';
@@ -19,23 +15,14 @@ section.contactme .tittle-contact-section {
     ;
 }
 
-section.contactme .tittle-contact-section::after {
-    content: "";
-    position: absolute;
-    margin-top: 5%;
-    margin-left: -18.5%;
-    width: 60px;
-    height: 6px;
-    background: #6A42D2;
-}
-
 
 /* contact info */
 
 .contactme .contact-info {
-    padding-left: 180px;
+    /* padding-left: 130px; */
     /* width: 50%; */
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .contactme .contact-info p {
@@ -72,10 +59,10 @@ section.contactme .tittle-contact-section::after {
 
 .formulario {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 2%;
+    left: 0;
 }
 
 .formulario .form-input {
@@ -86,9 +73,21 @@ section.contactme .tittle-contact-section::after {
     font-size: 1.2rem;
 }
 
+.formulario span {
+    display: inline;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-left: -100px;
+}
+
+.check {
+    margin-left: -380px;
+}
+
 .formulario textarea {
     width: 400px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     padding-left: 15px;
     font-size: 1.2rem;
 }
@@ -101,7 +100,8 @@ section.contactme .tittle-contact-section::after {
 }
 
 .formbtn {
-    padding-left: 400px;
+    margin-top: 5px;
+    padding: 20px 180px;
 }
 
 footer {
@@ -120,4 +120,46 @@ footer img {
     width: 150px;
     height: 80px;
     padding-bottom: -10px;
+}
+
+@media(max-width: 1024px) {
+    .contactme .contact-info {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .grid-container-contact {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .contactme .contact-info {
+        padding-left: 20px;
+    }
+    .formulario .form-input {
+        width: 90%;
+        height: 45px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        font-size: 1.2rem;
+    }
+    .formulario textarea {
+        width: 90%;
+    }
+    .contact-info.grid-item-contact {
+        text-align: center;
+    }
+    .contactme .contact-info p {
+        font-size: 1.2rem;
+        color: #6a6969;
+        line-height: 40px;
+    }
+    .contactme .contact-info {
+        margin-bottom: 0px;
+    }
+    section.contactme .tittle-contact-section {
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px 0 45px;
+    }
 }
