@@ -52,7 +52,7 @@ section.works .tittle-works-section {
     background: #008C5d;
 }
 
-.grid-item .card-tittle {
+.grid-item .card-tittle>a {
     position: relative;
     left: -20px;
     top: 30px;
@@ -61,6 +61,7 @@ section.works .tittle-works-section {
     font-family: 'Anton', 'Sans serif';
     font-size: 1.6rem;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .grid-item .card-img-container {
