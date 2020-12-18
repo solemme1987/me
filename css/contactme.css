@@ -1,5 +1,107 @@
-section.contactme {
-    width: 100%;
+section.contactme {}
+
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item-contact {
+    /* border: 1px solid red; */
+}
+
+section.contactme .tittle-contact-section {
+    text-transform: uppercase;
+    font-family: 'Anton', 'Sans serif';
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0 45px;
+    letter-spacing: 3px;
+    ;
+}
+
+section.contactme .tittle-contact-section::after {
+    content: "";
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -18.5%;
+    width: 60px;
+    height: 6px;
+    background: #6A42D2;
+}
+
+
+/* contact info */
+
+.contactme .contact-info {
+    padding-left: 180px;
+    /* width: 50%; */
+    margin-bottom: 50px;
+}
+
+.contactme .contact-info p {
+    font-size: 1.5rem;
+    color: #6a6969;
+    line-height: 80px;
+}
+
+.contactme .contact-info p i {
+    font-size: 1.5rem;
+    color: #6A42D2;
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.contactme .contact-info span a i.social-icon {
+    color: #6A42D2;
+}
+
+.contactme .contact-info span a i.social-icon:hover {
+    color: white;
+}
+
+.contactme .contact-info span a {
+    font-size: 1.5rem;
+    color: #6A42D2;
+    font-size: 1.3rem;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+
+/* contac form */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.formulario .form-input {
+    width: 400px;
+    height: 45px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+
+.formulario textarea {
+    width: 400px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+
+.contactme .contact-form {
+    /* border: 1px solid red; */
+    /* width: 50%; */
+    margin-bottom: 50px;
+    ;
+}
+
+.formbtn {
+    padding-left: 400px;
 }
 
 footer {
