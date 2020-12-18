@@ -1,0 +1,21 @@
+section.contactme {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111517;
+    font-size: 2rem;
+    color: white;
+    flex-direction: column;
+}
+
+footer img {
+    width: 150px;
+    height: 80px;
+    padding-bottom: -10px;
+}
