@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/retos.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="css/contactme.css">
-    <title>RCH</title>
+    <link rel="stylesheet" href="css/retos.css">
+ 
+    <title>RCH- RETOS</title>
 </head>
 
 <body>
@@ -36,11 +39,8 @@
 
                 <ul class="menu-list">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#works">MY WORK</a></li>
                     <li><a href="retos.html">RETOS</a></li>
-                    <li><a href="#contactme">CONTACT ME </a></li>
+                   
                 </ul>
 
                 <div class="social">
@@ -60,33 +60,30 @@
                     <!-- TITULO E IMAGEN -->
                     <div class="poster-container">
                         <h2 class="titulo">
-                            web developer full-stack
+                        50 dias de Javascript baja para buscar.
                         </h2>
                         <!-- SKILLS ICON -->
-                        <p class="skills-icon">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                            <i class="fab fa-angular"></i>
-                            <i class="fab fa-github-square"></i>
-                            <i class="fas fa-database"></i>
-                            <i class="fab fa-php"></i>
-                        </p>
+                      
                     </div>
                     <!-- IMAGEN DE PERFIL -->
-                    <div class="perfil-container">
-                        <img src="img/imgperfil.png " alt="" class="img-perfil">
+                    <div class="perfil-retos" id="logoJs">
+
+                          
+                            <i class="fab fa-js-square logoJs"></i>
+                            
+                        
+                        <!-- <img src="img/imgperfil.png " alt="" class="img-perfil"> -->
                     </div>
                 </div>
             </div>
 
             <!-- PARRAFO DEL HEADER Y EL BOTON -->
-            <div class="anuncio-parrafo">
+            <!-- <div class="anuncio-parrafo">
                 <p>
-                    You have the vision for a stunning digital experience. We’re the software design and engineering team that can bring it to life
+                    Retos Realizados por Ricardo cortes Hurtado. Practicando JS
                 </p>
-                <button class="btn anuncio-parrafo-button">LET´S GET STARTED</button>
-            </div>
+                
+            </div> -->
 
             <div class="header-footer">
 
@@ -110,7 +107,7 @@
         </header>
 
         <!-- SECCION DE aboutme -->
-        <section id="aboutme" class="aboutme">
+        <!-- <section id="aboutme" class="aboutme">
 
             <div class="aboutme_description">
 
@@ -132,10 +129,10 @@
                 <img src="img/aboutme.jpg" alt="about me" srcset="">
             </div>
 
-        </section>
+        </section> -->
 
         <!-- SECCION DE SKILLS -->
-        <section id="skills" class="skills">
+        <!-- <section id="skills" class="skills">
 
             <div class="skills_description">
 
@@ -150,7 +147,7 @@
             <div class="skills_stack">
                 <h2 class="skills_title_2">my skills</h2>
 
-                <!-- PRIMER BLOQUE DE BARRAS -->
+                
                 <div class="skills_bar">
 
                     <div class="ht">
@@ -173,7 +170,7 @@
 
                 </div>
 
-                <!-- SEGUNDO BLOQUE DE BARRAS -->
+              
                 <div class="skills_bar">
 
                     <div class="css">
@@ -195,7 +192,7 @@
 
                 </div>
 
-                <!-- TERCER BLOQUE DE BARRAS-->
+                
                 <div class="skills_bar">
                     <div class="css">
                         <div class="label">
@@ -219,76 +216,29 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <section id="works" class="works">
-            <h2 class="tittle-works-section">my works</h2>
-            <div class="grid-container">
-                <div class="grid-item je">
-                    <div class="card ">
-                        <h2 class="card-tittle"><a href="https://www.joyeriaemanuel.com" target="_blank">j-emanuel</a> </h2>
-                        <div class="card-img-container">
-                            <img src="img/jem.png" alt="" class="card-img">
-                        </div>
 
-                        <h3 class="card-subtittle">desing, frontend, backend</h3>
-                    </div>
-                </div>
-                <div class="grid-item xisart ">
-                    <div class="card ">
-                        <h2 class="card-tittle"><a href="https://www.xisart.com" target="_blank">xisart</a></h2>
-                        <div class="card-img-container">
-                            <img src="img/xi.png" alt="" class="card-img">
-                        </div>
+            <div class="caja_busqueda">
 
-                        <h3 class="card-subtittle">desing, frontend, backend</h3>
-                    </div>
+                <h2 class="tittle-works-section">Buscar Retos</h2>
+                <div class="search" id="search">      
+                    <button class="btn" id="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" class="input" id="input" placeholder="search..." maxlength="20">
                 </div>
-                <div class="grid-item kilele">
-                    <div class="card ">
-                        <h2 class="card-tittle"><a href="https://solemme1987.github.io/kilelegroup/index.html" target="_blank">kilele group</a></h2>
-                        <div class="card-img-container">
-                            <img src="img/kl.png" alt="kilele group" class="card-img">
-                        </div>
-
-                        <h3 class="card-subtittle">desing, frontend</h3>
-                    </div>
-                </div>
-                <div class="grid-item woobit">
-                    <div class="card ">
-                        <h2 class="card-tittle"><a href="https://www.woobit.co" target="_blank">woobit</a></h2>
-                        <div class="card-img-container">
-                            <img src="img/w.png" alt="" class="card-img">
-                        </div>
-
-                        <h3 class="card-subtittle">desing, frontend, backend</h3>
-                    </div>
-                </div>
-                <div class="grid-item plaguiplus">
-                    <div class="card ">
-                        <h2 class="card-tittle"><a href="https://www.plaguiplus.com" target="_blank">plaguiplus</a></h2>
-                        </h2>
-                        <div class="card-img-container">
-                            <img src="img/pl.png" alt="" class="card-img">
-                        </div>
-
-                        <h3 class="card-subtittle">desing, frontend, backend</h3>
-                    </div>
-                </div>
-                <div class="grid-item covida">
-                    <div class="card ">
-                        <h2 class="card-tittle "><a href="https://solemme1987.github.io/covida/" target="_blank">covida</a></h2>
-                        <div class="card-img-container">
-                            <img src="img/co.png" alt="" class="card-img">
-                        </div>
-
-                        <h3 class="card-subtittle">desing, frontend</h3>
-                    </div>
-                </div>
+                
             </div>
+            
+            <div class="grid-container" id="gridRetos">
+                            
+            </div>
+            
         </section>
 
-        <section class="contactme">
+        <!-- <section class="contactme">
 
             <h2 class="tittle-contact-section ">contact me</h2>
 
@@ -338,13 +288,14 @@
                 width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
                     
             </iframe>
-        </section>
+        </section> -->
 
         <footer>
             <img src="img/logo.png" alt=""> ©
         </footer>
 
         <script src="js/app.js "></script>
+        <script src="js/retos.js "></script>
 
 </body>
 
