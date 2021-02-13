@@ -25,6 +25,8 @@
         {nombre: 'hover board', url: '../retos/08/index.html', img: ''},
         {nombre: 'scroll animation', url: '../retos/09/index.html', img: ''},
         {nombre: 'form input wave', url: '../retos/10/index.html', img: ''},
+        {nombre: 'dad jokes', url: '../retos/11/index.html', img: ''},
+        {nombre: 'sound board', url: '../retos/12/index.html', img: ''},
     
     ]
     // agregamos un pokemon a la imagen de cada reto
