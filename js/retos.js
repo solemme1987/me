@@ -36,6 +36,10 @@
         {nombre: 'pokedex', url: '../retos/19/index.html', img: ''},
         {nombre: 'doble click heart', url: '../retos/20/index.html', img: ''},
         {nombre: 'event key code', url: '../retos/21/index.html', img: ''},
+        {nombre: 'mobile nav', url: '../retos/22/index.html', img: ''},
+        {nombre: 'drink water', url: '../retos/23/index.html', img: ''},
+        {nombre: 'feedback ui', url: '../retos/24/index.html', img: ''},
+        {nombre: 'github profile', url: '../retos/25/index.html', img: ''},
 
     
     ]
