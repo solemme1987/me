@@ -16,7 +16,7 @@
     let infoRetos=[
     
         {nombre: 'expanding cards', url: '../retos/01/01.html', img: ''},
-        {nombre: 'progress steps', url: '../retos/02/index.html', img: ''},
+        {nombre: 'progress steps', url: '../retos/02/02.html', img: ''},
         {nombre: 'rotating navigat', url: '../retos/03/index.html', img: ''},
         {nombre: 'hidden search', url: '../retos/04/index.html', img: ''},
         {nombre: 'blurry loading', url: '../retos/05/index.html', img: ''},
