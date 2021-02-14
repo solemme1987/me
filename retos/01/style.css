@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    /*cambié el background-size a auto para que no me redimencionara la imagen 
+   de fondo en el momento de cambiar de tamaño el panel. me hacia un tipo
+   de zoom-in cuando terminaba de completar el tamaño del panel*/
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    /* codigo agregado por mi */
+    border-radius: 35px;
+    width: 80px;
+    position: relative;
+    transition-property: width;
+    transition-duration: 1.2s;
+}
+
+.panel h3 {
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    width: 100%;
+}
+
+.panel.active h3 {
+    position: absolute;
+    opacity: 100%;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(even) {
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+.poster .perfil-retos i {
+    font-size: 20rem;
+    color:#EED731;
+}
+
+.anuncio .poster .poster-container h2 {
+    max-width: 500px;
+
+}
+
+.grid-container .grid-item {
+    
+    max-width:350px ;
+    height: 300px;
+    transition: 0.8s ease-in-out;
+    
+}
+
+
+/* RESETEAMOS EL CIRCULO BLANCO A MAS PEQUEÑO */
+.grid-item .card-img-container {
+ 
+    top: 50px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.grid-item .card .card-subtittle {
+   
+    top: 75px;
+}
+
+section.works .tittle-works-section {
+    margin: 0;  
+}
+
+
+/* ESTILOS BARRA DE BUSQUEDA */
+
+.caja_busqueda{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.search {
+    position: relative;
+    height: 50px;
+    display: flex;
+    /* border: 1px solid red; */
+    width:auto;
+
+
+}
+
+.search .input {
+    border: 10;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-top: -4px;
+    margin-left: -13px;
+    width: 0px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+    margin-left: 20px;
+    position: relative; 
+    transition: 0.6s ease-in-out;
+    margin-top: -4px;
+}
+
+.btn i {
+    font-size: 24px;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 400px;
+    margin-left: 5px;
+}
+
+.search.active input {
+    width: 400px;
+}

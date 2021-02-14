@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/retos.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/contactme.css">
+    <link rel="stylesheet" href="css/retos.css">
+ 
+    <title>RCH - RETOS</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <!-- BARRA DE NAVEGACION -->
+            <nav>
+                <!-- LOGO -->
+                <a href="index.html">
+                    <img src="img/logo.png" class="logo" alt="logo Ricardo Cortes">
+                </a>
+                <!-- BOTON DEL MENU -->
+                <i class="fas fa-bars menu-buttom toggle" onclick="activarMenu()"></i>
+            </nav>
+
+            <!-- MENU -->
+            <div class="menu">
+
+                <ul class="menu-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="retos.html">RETOS</a></li>
+                   
+                </ul>
+
+                <div class="social">
+
+                    <a href="https://github.com/solemme1987"><i class="fab fa-github-alt social-icon"></i></a>
+                    <a href="https://twitter.com/ricacor3"><i class="fab fa-twitter social-icon"></i></a>
+                    <a href="https://www.facebook.com/ricardo.corteshurtado/"><i class="fab fa-facebook-f social-icon"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=573043393781&text=Hola%20me%20gustaría%20Contratarte"><i class="fab fa-whatsapp social-icon"></i></a>
+                </div>
+
+            </div>
+
+            <!-- ANUNCIO DEL HEADER PARRAFO Y SKILLS -->
+            <div class="anuncio">
+                <!-- TITULO FOTO Y SKILS -->
+                <div class="poster">
+                    <!-- TITULO E IMAGEN -->
+                    <div class="poster-container">
+                        <h2 class="titulo">
+                          50 days of javascript, scroll down for to search
+                        </h2>
+                        <!-- SKILLS ICON -->
+                      
+                    </div>
+                    <!-- IMAGEN DE PERFIL -->
+                    <div class="perfil-retos" id="logoJs">
+
+                          
+                            <i class="fab fa-js-square logoJs"></i>
+                            
+                        
+                        <!-- <img src="img/imgperfil.png " alt="" class="img-perfil"> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARRAFO DEL HEADER Y EL BOTON -->
+            <!-- <div class="anuncio-parrafo">
+                <p>
+                    Retos Realizados por Ricardo cortes Hurtado. Practicando JS
+                </p>
+                
+            </div> -->
+
+            <div class="header-footer">
+
+                <div class="header-footer-text">
+                    <p>we've built solution for...</p>
+                </div>
+
+                <div class="header-footer-brands">
+                    <img src="img/xisart.png" class="xisart" alt="">
+                    <img src="img/je.png" class="je" alt="">
+                    <img src="img/kilele.png" class="kilele" alt="">
+                </div>
+
+                <div class="chat">
+                    <a href="https://api.whatsapp.com/send?phone=573043393781&text=Hola%20me%20gustaría%20Contratarte"><i class="fas fa-comment-dots"></i></a>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- SECCION DE aboutme -->
+        <!-- <section id="aboutme" class="aboutme">
+
+            <div class="aboutme_description">
+
+                <h2 class="aboutme_title">about me</h2>
+
+                <h2 class="aboutme_subtitle">
+                    Enjoy life, one wave at a time time
+                </h2>
+
+                <p class="aboutme_text">
+                    I am passionate about developing software with the highest standards of quality and efficiency. With hard work, dedication, imagination and ingenuity, I am willing to develop any web project, providing support and maintenance to each of the Software applications.
+                </p>
+
+                <button class="btn aboutme_btn ">contact me </button>
+
+            </div>
+
+            <div class="aboutme_img">
+                <img src="img/aboutme.jpg" alt="about me" srcset="">
+            </div>
+
+        </section> -->
+
+        <!-- SECCION DE SKILLS -->
+        <!-- <section id="skills" class="skills">
+
+            <div class="skills_description">
+
+                <h2 class="skills_title_1">welcome to my site</h2>
+
+
+                <p class="skills-text">
+                    Curious developer willing to learn new things, I like to pay attention to details so as not to tend to make mistakes, I adapt quickly to changes including understanding someone else's code (colleagues).
+                </p>
+            </div>
+
+            <div class="skills_stack">
+                <h2 class="skills_title_2">my skills</h2>
+
+                
+                <div class="skills_bar">
+
+                    <div class="ht">
+                        <div class="label">
+                            <span>html</span><span>80%</span>
+                        </div>
+                        <progress class="bar" max="100" value="80"> 
+                            80% 
+                        </progress>
+                    </div>
+
+                    <div class="db ml">
+                        <div class="label">
+                            <span>database</span><span>80%</span>
+                        </div>
+                        <progress class="bar" max="100" value="80"> 
+                            80% 
+                        </progress>
+                    </div>
+
+                </div>
+
+              
+                <div class="skills_bar">
+
+                    <div class="css">
+                        <div class="label">
+                            <span>css</span><span>70%</span>
+                        </div>
+                        <progress class="bar" max="100" value="70"> 
+                            70% 
+                        </progress>
+                    </div>
+                    <div class="php ml">
+                        <div class="label">
+                            <span>php</span><span>65%</span>
+                        </div>
+                        <progress class="bar" max="100" value="65"> 
+                            65% 
+                        </progress>
+                    </div>
+
+                </div>
+
+                
+                <div class="skills_bar">
+                    <div class="css">
+                        <div class="label">
+                            <span>javascript</span><span>70%</span>
+                        </div>
+                        <progress class="bar" max="100" value="70"> 
+                            70% 
+                        </progress>
+                    </div>
+
+
+                    <div class="angular ml">
+                        <div class="label">
+                            <span>angular</span><span>40%</span>
+                        </div>
+                        <progress class="bar" max="100" value="40"> 
+                            40% 
+                        </progress>
+                    </div>
+
+                </div>
+            </div>
+
+        </section> -->
+
+        <section id="works" class="works">
+
+            <div class="caja_busqueda">
+
+                <h2 class="tittle-works-section">Buscar Retos</h2>
+                <div class="search" id="search">      
+                    <button class="btn" id="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" class="input" id="input" placeholder="search..." maxlength="20">
+                </div>
+                
+            </div>
+            
+            <div class="grid-container" id="gridRetos">
+                            
+            </div>
+            
+        </section>
+
+        <!-- <section class="contactme">
+
+            <h2 class="tittle-contact-section ">contact me</h2>
+
+            <div class="grid-container-contact">
+                <div class="contact-info grid-item-contact">
+                    <p><i class="fas fa-mobile"></i> +(57)304 3393781</p>
+                    <p><i class="fas fa-envelope"></i>ricacor3@gmail.com</p>
+                    <p><i class="fas fa-home"></i>Trasn 55 # 2 sur 45</p>
+
+                    <span>
+                        <a href="https://github.com/solemme1987">
+                            <i class="fab fa-github-alt social-icon"></i>
+                        </a>
+                        <a href="https://twitter.com/ricacor3">
+                            <i class="fab fa-twitter social-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ricardo.corteshurtado/">
+                            <i class="fab fa-facebook-f social-icon"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=573043393781&text=Hola%20me%20gustaría%20Contratarte">
+                            <i class="fab fa-whatsapp social-icon"></i>
+                        </a>
+                    </span>
+                </div>
+
+                <div class="contact-form grid-item-contact">
+
+                    <form action="" class="formulario">
+                        <input type="text" class="form-input" placeholder="Name * ">
+                        <input type="text" class="form-input" placeholder="Phone Number * ">
+                        <input type="text" class="form-input" placeholder="Email * ">
+                        <input type="checkbox" class="check"><span> yes, i want to subscribe to your news letters</span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message... *"></textarea>
+                        <button class="btn formbtn" type="submit">send</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6696151660176!2d-77.03182948591049!3d3.8808236493027426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3724a3db30f743%3A0x3e2d3fc333bf5923!2sCra.%2039%20%234b-3%2C%20Buenaventura%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1600974534611!5m2!1ses-419!2sco"
+                width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    
+            </iframe>
+        </section> -->
+
+        <footer>
+            <img src="img/logo.png" alt=""> ©
+        </footer>
+
+        <script src="js/app.js "></script>
+        <script src="js/retos.js "></script>
+
+</body>
+
+</html>                                                     
