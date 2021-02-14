@@ -29,7 +29,14 @@
         {nombre: 'sound board', url: '../retos/12/index.html', img: ''},
         {nombre: 'live user filter', url: '../retos/13/index.html', img: ''},
         {nombre: 'button ripple', url: '../retos/14/index.html', img: ''},
-        {nombre: 'background slid', url: '../retos/15/index.html', img: ''},
+        {nombre: 'background slide', url: '../retos/15/index.html', img: ''},
+        {nombre: 'kinetic loader', url: '../retos/16/index.html', img: ''},
+        {nombre: 'netflix mobile', url: '../retos/17/index.html', img: ''},
+        {nombre: 'textimonial box', url: '../retos/18/index.html', img: ''},
+        {nombre: 'pokedex', url: '../retos/19/index.html', img: ''},
+        {nombre: 'doble click heart', url: '../retos/20/index.html', img: ''},
+        {nombre: 'event key code', url: '../retos/21/index.html', img: ''},
+
     
     ]
     // agregamos un pokemon a la imagen de cada reto
