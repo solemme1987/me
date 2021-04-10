@@ -28,8 +28,8 @@ section.works .tittle-works-section {
     box-sizing: content-box;
 }
 
-.grid-container .grid-item.je {
-    background: linear-gradient(#5642d2, #6A42D2);
+.grid-container .grid-item.terranova {
+    background: #251D2D;
 }
 
 .grid-container .grid-item.xisart {
@@ -101,6 +101,10 @@ section.works .tittle-works-section {
     width: 80%;
 }
 
+.grid-item.terranova .card-img-container img {
+    width: 80%;
+}
+
 .grid-item.plaguiplus .card-img-container img {
     width: 100%;
 }
@@ -142,6 +146,10 @@ section.works .tittle-works-section {
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
+}
+
+.inventory {
+    text-transform: lowercase;
 }
 
 @media(max-width: 678px) {

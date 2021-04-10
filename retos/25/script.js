@@ -6,8 +6,8 @@ const search = document.getElementById('search')
 
 async function getUser(username) {
     try {
-        const { data } = await axios(APIURL + username)
-
+        const { data } = await axios(`${APIURL}${username}`)
+           
         createUserCard(data)
         getRepos(username)
     } catch(err) {
@@ -17,7 +17,7 @@ async function getUser(username) {
     }
 }
 
-async function getRepos(username) {
+async function getRepos(username) { 
     try {
         const { data } = await axios(APIURL + username + '/repos?sort=created')
 
