@@ -62,14 +62,9 @@ section.skills::before {
     ;
 }
 
-progress {
-    width: 17em;
-    padding: 0;
-}
-
 .bar {
     background: linear-gradient(90deg, #A03DD4, #4FA5EB);
-    width: 17em;
+    width: 10em;
     height: 5px;
     border-radius: 20px;
     margin-top: 5px;
