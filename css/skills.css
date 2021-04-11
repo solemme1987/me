@@ -67,6 +67,14 @@ progress {
     padding: 0;
 }
 
+.bar {
+    background: linear-gradient(90deg, #A03DD4, #4FA5EB);
+    width: 17em;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
 .skills_stack .skills_bar {
     display: flex;
 }

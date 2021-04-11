@@ -56,8 +56,10 @@ section.skills {
 
 .aboutme_btn {
     width: 230px;
-    padding: 15px;
+    padding: 18px 70px;
     text-transform: uppercase;
+    position: relative;
+    top: 10px;
 }
 
 .aboutme_btn:hover {
